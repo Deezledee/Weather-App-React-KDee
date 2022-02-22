@@ -7,27 +7,26 @@ export default function Weather () {
       <h1>🌡️ Weather Forecast 🌡️</h1>
 
       <br />
-      <form id="search-form">
+      <form>
         <input
-          id="city-input"
           type="text"
           className="form-control"
           placeholder="Enter a city name"
           autocomplete="on"
         />
         <input type="submit" value="Search 🔍" className="form-control" /> <br />
-        <button className="btn btn-success" id="currentLocation1">
+        <button className="btn btn-success">
           Current location 📍
         </button>
       </form>
       <br />
 
-      <h2 id="today2">Today in Berlin</h2>
+      <h2>Today in Berlin</h2>
       <br />
       <p>
-        <span id="temperature" className="today-temperature">19</span>
+        <span className="today-temperature">19</span>
         <span className="units">
-          <a href="#" id="celsius">°C</a> |<a href="#" id="fahrenheit"
+          <a href="#" >°C</a> |<a href="#"
             >°F</a
           ></span
         >
@@ -35,11 +34,10 @@ export default function Weather () {
       </p>
 
       <div className="todayDescription">
-        <span id="today_description">Slight Rain</span>
+        <span >Slight Rain</span>
         <img
           src="http://openweathermap.org/img/wn/10d@2x.png"
           alt="clear sky"
-          id="main-icon"
           className="float-right"
           width="50px"
         />
@@ -47,19 +45,19 @@ export default function Weather () {
       <br />
       <div className="row paremeters">
         <div className="col humidity">
-          💧 Humidity: <span id="humidity_number">52</span>%
+          💧 Humidity: <span >52</span>%
         </div>
         <div className="col windspeed">
           💨 Windspeed:
-          <span id="windspeed_number">23</span> m/s
+          <span>23</span> m/s
         </div>
       </div>
       <br />
-      <h3 id="date" class="date">Thursday 30/12/2021 22:30</h3>
+      <h3 class="date">Thursday 30/12/2021 22:30</h3>
       <br />
 
 
-      <div className="weather-forecast" id="forecast">
+      <div className="weather-forecast">
           <div className="row">
             <div className="col-2">
               <div className="weather-forecast-date">Thu</div>
